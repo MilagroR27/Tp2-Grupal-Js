@@ -5,7 +5,7 @@ const docsection= document.querySelector("#medico1");
   let card= document.createElement('div');
   card.classList.add('medicos')
   let doc= 
-  `
+  ` 
   <img class='imgdoc' src= ${medicos.medico1.src} >
   <p> ${medicos.medico1.nombre} </p>
   <p> ${medicos.medico1.especialidad} </p>
