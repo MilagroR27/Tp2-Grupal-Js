@@ -1,0 +1,101 @@
+main {
+    position: relative;
+    margin-top: 25%;
+    background-color:  #ffffff ;
+    background-size: cover;
+}
+
+.container {
+    width: 75%;
+    height: 80%;
+    background-color: #344D67;
+    color: #ffffff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    box-sizing: border-box;
+    padding: 20% 5% 10% 5%;
+    border: solid 10px   #6ECAAF ;
+    border-radius:30px 30px;
+    border-top-style: inherit;
+    border-bottom-style: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 50px);
+    border: solid 5px #6ECAAF;
+}
+
+.container h1 {
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.container .medico {
+    text-decoration: none;
+    height: 40px;
+    width: 40%;
+    background: #ffffff ;
+    color: #333;
+    font-size: 18px;
+    /* margin-top: 25px;
+    margin-bottom: 15px; */
+    border: solid 5px #6ECAAF;
+    border-radius: 10px;
+    border-top-style: inherit;
+    border-right-style: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .paciente {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40%;
+    background: #ffffff ;
+    color: #333;
+    font-size: 18px;
+    /* margin-top: 0px; */
+    border: solid 5px #6ECAAF;
+    border-radius: 10px;
+    border-top-style: inherit;
+    border-right-style: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+
+.container a:hover {
+    transform: scale(1.1);
+    color: #44AA99;
+}
+
+.container input[type="submit"]:hover {
+    color: #44AA99;
+}
+
+.container input::placeholder {
+    color: #44AA99;
+}
