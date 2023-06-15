@@ -1,0 +1,15 @@
+.medicos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px rgb(230, 230, 230) outset;
+  margin: 20px;
+  padding: 10px;
+}
+
+.imgdoc{
+  width: 200px;
+  height: 200px;
+
+  
+}
