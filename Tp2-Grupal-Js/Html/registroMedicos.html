@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Registro De Medicos</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <img class="img" src="000.png"alt="Logo">
+            <h1>Registro para Medicos</h1>
+            <form action="00.html" method="post" id="medicoForm">
+    
+            <label class="apellidoYNombre" for="nombre">Apellido y Nombre</label>
+            <input 
+            type="text" 
+            name="apellidoYNombre" 
+            id="nombreMedico"
+            placeholder="Ingrese su Apellido y Nombre"
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s']+"
+            required
+            >
+
+            <label class="email" for="email">Email</label>
+            <input 
+            type="email" 
+            name="email" 
+            id="emailMedico" 
+            placeholder="Ingrese su correo"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            >
+                
+            <label class="matricula" for="matricula">Matricula</label>
+            <input 
+            type="number" 
+            name="matricula" 
+            id="matriculaMedico"
+            placeholder="Ingrese su matricula"
+            required
+            >
+
+            <label class="especialidad" for="Usuario">Especialidad</label>
+            <input 
+            type="text" 
+            name="Especialidad" 
+            id="especialidadMedico"
+            placeholder="Ingrese su especialidad"
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s']+"
+            title="Ejemplo: Neurologia"
+            required
+            >
+
+            <label class="user" for="Usuario">Usuario</label>
+            <input 
+            type="text" 
+            name="Usuario" 
+            id="usuarioMedico"
+            placeholder="Ingrese su nombre usuario"
+            pattern="[a-zA-Z0-9.-]+"
+            title="Ejemplo: JuanPerez"
+            required
+            >
+    
+            <label class="password" for="Contraseña">Contraseña</label>
+            <input type="password" 
+            name="Contraseña"
+            id="contraseñaMedico"
+            placeholder="Ingresa tu contraseña"
+            required
+            pattern="[a-zA-Z0-9]{5,10}"
+            oninvalid="setCustomValidity('La contraeña debe tener al minimo 5 caracteres y un nmero')"
+            >
+
+            <label for="imagen">Imagen de perfil:</label>
+            <input type="file" 
+            id="imagen" 
+            name="imagen" 
+            accept="image/*" 
+            required>
+            <br>
+    
+            
+            <input 
+            type="submit" 
+            value="Registrarme"
+            onclick="registrarMedico(event)">
+
+            <a 
+            href="/LogIn/index.html"
+            >Volver</a>
+            
+            </form>
+        </div>
+    </main>
+
+    <script defer src="Data.js" ></script>
+</body>
+</html>
