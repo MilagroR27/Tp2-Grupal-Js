@@ -1,0 +1,17 @@
+.turno{
+    display: flex;
+    border: 2px black solid;
+    align-self: center;
+    justify-content: space-evenly;
+    max-width: 60%;
+    margin: auto;
+}
+
+.cancelar {
+    background-color: #6ECCAF;
+    font-weight: 500;
+}
+
+.cancelar:hover {
+    border: 1px black solid;
+}
