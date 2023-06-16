@@ -97,16 +97,24 @@
 
 
     <div class="row row-cols-1 doc2" id="turnos-para-medicos">
-
+      
       <div id="medico1">
         
       </div>
-      <div class="inputsturnos">
-        <input type="datetime-local" name="turnos" id="turnospacientes">
-        <input type="button" value="Confirmar Turno" style="background-color: #6ECCAF;">
+      <div >
+        <form   name="turnos" method="post">
+          <input type="text" name="turnos" id="motivo" style="WIDTH: 300px; HEIGHT: 100px"
+          size=32> 
+          <br> <br>
+          <input type="date" name="turnos" id="dia" max="2023-06-30T18:30"  min="2023-06-01T08:30" >
+          <br> <br>
+          <input type="time" name="turnos" id="hora" >
+          <br> <br>
+          <input type="button" name="turnos" value="Confirmar Turno" id="confirmar" style="background-color: #6ECCAF;">
+        </form>
       </div>
+      
     </div>
-
 
   </div>
 

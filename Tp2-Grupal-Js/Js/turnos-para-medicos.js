@@ -1,5 +1,4 @@
-// para poner una tarjeta en especifico
-
+// Tarjetas de los medicos
 const docsection= document.querySelector("#medico1");
 
   let card= document.createElement('div');
@@ -16,20 +15,34 @@ const docsection= document.querySelector("#medico1");
   card.innerHTML=doc;
   docsection.appendChild(card);
 
+// input de turnos
+const guardarTurno= []
+const motivo= document.querySelector("#motivo");
+const dia= document.querySelector("#dia");
+const hora= document.querySelector("#hora");
+document.querySelector("#confirmar").addEventListener("click", () =>{
+  const pacienteT= 
+  {
+    dia: dia.value,
+    hora: hora.value,
+    motivo: motivo.value,
+  }
+  // if (pacienteT !== "") {
+  //   alert("Por favor Ingrese correctamente los datos");
+  // }
+  if ((localStorage.setItem(motivo.value, JSON.stringify(pacienteT)))!== "") {
+    localStorage.removeItem(pacienteT);
+  }
+  localStorage.setItem(motivo.value, JSON.stringify(pacienteT))
+  motivo.value=""
+  dia.value= ""
+  hora.value=""
+})
 
 
 
-// para poner varias cosas
-// Object.values(medicos).forEach (function (element) {
-//   let card= document.createElement('div');
-//   let doc= 
-//   `
-//   <img src=${element.src} >
-//   <p>${element.Nombre}</p>
-//   <p>${element.Especialidad}</p>
-//   <p>${element.Matricula}</p>
-//   `;
 
-//   card.innerHTML=doc;
-//   docsection.appendChild(card);
-// })
+
+
+
+
