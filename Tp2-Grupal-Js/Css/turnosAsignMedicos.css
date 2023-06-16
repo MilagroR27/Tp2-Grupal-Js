@@ -1,0 +1,35 @@
+.contenedor{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+   
+
+}
+/* @media screen and (max-width:1200px){
+    .box{
+        width:40%
+    }
+}
+@media screen and (max-width:600px){
+
+    .box{
+        width:90%
+    }
+} */
+
+
+.box{
+    width: 800px;
+    height: auto;
+    margin: 5px;
+    box-sizing: border-box;
+    
+}
+.box1{
+    width: auto;
+    height:75px;
+}
