@@ -1,27 +1,42 @@
-<script>
-    {/* function submitForm(event) {
-        event.preventDefault(); // Evita que se envíe el formulario y se recargue la página */}    
-    function registrarMedico() {   
-        // -----------OBTENIENDO VALORES DE ENTRADA DEL FORMULARIO Y GUARDANDOLOS COMO VARABLES------------
-        let nombre = document.getElementById("nomrbeMedico").value;
-        let email = document.getElementById("emailMedico").value;
-        let matricula = document.getElementById("matriculaMedico").value;
-        let especialidad = document.getElementById("especialidadMedico").value;
-        let usuario = document.getElementById("usuarioMedico").value;
-        let contraseña = document.getElementById("contraseñaMedico").value;
-        let imagen = document.getElementById("imagen").value;
-        
-        
-        // Haz lo que necesites con los valores de las variables
-        console.log("Nombre:", nombre);
-        console.log("Correo electrónico:", email);
-        
-        // Puedes realizar otras operaciones, como enviar los datos a un servidor o realizar validaciones
-        
-        // Limpia el formulario si es necesario
-        document.getElementById("myForm").reset();
-    }
+let medicos=[];
+
+// Obtener referencia a los formularios en el HTML
+const formularioMedicos = document.getElementById('registroMedicos');
+
+// Manejar el envío del formulario de médicos
+formularioMedicos.addEventListener('submit', function(event) {
+  event.preventDefault(); // esto va a evitar que el formulario se envíe automáticamente
+
+  // estos son los valores ingresados en el formulario
+  const nombreMedico = document.getElementById('nombreMedico').value;
+  const emailMedico = document.getElementById('emailMedico').value;
+  const matriculaMedico = document.getElementById('matriculaMedico').value;
+  const especialidadMedico = document.getElementById('especialidadMedico').value;
+  const usuarioMedico = document.getElementById('usuarioMedico').value;
+  const contraseñaMedico = document.getElementById('contraseñaMedico').value;
+//   -----FALTA LA FOTO DEL MEDICO
 
 
+  // creamos el objeto "medico1" con los datos obtenidos 
+  const medico1 = {
+    nombre: nombreMedico,
+    email: emailMedico,
+    matricula: matriculaMedico,
+    especialidad: especialidadMedico,
+    usuario: usuarioMedico,
+    contraseña: contraseñaMedico
+  };
 
-</script>
+  // Aqui guardamos los datos del medico1 en un array llamado medico
+    medicos.push(medico1);
+
+  localStorage.setItem('datosDelMedico', JSON.stringify(medicos));
+
+  // Limpiamos el formulario después de guardar los datos
+  formularioMedicos.reset();
+  
+  // Lanzamos un alert para confirmar el envío del formulario   
+  alert('¡El registro del médico se ha realizado con éxito!');
+
+  });
+
