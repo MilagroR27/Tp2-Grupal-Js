@@ -24,7 +24,7 @@ formularioMedicos.addEventListener('submit', function(event) {
     matricula: matriculaMedico,
     especialidad: especialidadMedico,
     usuario: usuarioMedico,
-    contraseña: contraseñaMedico
+    contraseña: contraseñaMedico,
   };
 
   // Aqui guardamos los datos del medico1 en un array llamado medico
@@ -36,7 +36,7 @@ formularioMedicos.addEventListener('submit', function(event) {
   formularioMedicos.reset();
   
   // Lanzamos un alert para confirmar el envío del formulario   
-  alert('¡El registro del médico se ha realizado con éxito!');
+  alert('¡El registro se ha realizado con éxito!');
 
   });
 
