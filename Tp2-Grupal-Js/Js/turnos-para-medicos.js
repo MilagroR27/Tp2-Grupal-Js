@@ -17,11 +17,13 @@ const docsection= document.querySelector("#medico1");
 
 // input de turnos
 const guardarTurno= []
+
 const motivo= document.querySelector("#motivo");
 const dia= document.querySelector("#dia");
 const hora= document.querySelector("#hora");
 document.querySelector("#confirmar").addEventListener("click", () =>{
-  const pacienteT= 
+
+let pacienteT= 
   {
     dia: dia.value,
     hora: hora.value,
@@ -31,6 +33,8 @@ document.querySelector("#confirmar").addEventListener("click", () =>{
   motivo.value=""
   dia.value= ""
   hora.value=""
+
+  guardarTurno.push(pacienteT)
 })
 
 
