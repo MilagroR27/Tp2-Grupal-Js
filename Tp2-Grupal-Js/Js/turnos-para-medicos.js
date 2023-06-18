@@ -27,17 +27,13 @@ document.querySelector("#confirmar").addEventListener("click", () =>{
     hora: hora.value,
     motivo: motivo.value,
   }
-  // if (pacienteT !== "") {
-  //   alert("Por favor Ingrese correctamente los datos");
-  // }
-  if ((localStorage.setItem(motivo.value, JSON.stringify(pacienteT)))!== "") {
-    localStorage.removeItem(pacienteT);
-  }
   localStorage.setItem(motivo.value, JSON.stringify(pacienteT))
   motivo.value=""
   dia.value= ""
   hora.value=""
 })
+
+
 
 
 
