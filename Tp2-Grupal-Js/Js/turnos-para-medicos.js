@@ -16,27 +16,37 @@ const docsection= document.querySelector("#medico1");
   docsection.appendChild(card);
 
 // input de turnos
+
+
 const guardarTurno= []
+
 const motivo= document.querySelector("#motivo");
+
 const dia= document.querySelector("#dia");
+
 const hora= document.querySelector("#hora");
+
+console.log(pacientes.values);
+
 document.querySelector("#confirmar").addEventListener("click", () =>{
-  const pacienteT= 
+
+
+
+  const paciente1T= 
   {
+    
     dia: dia.value,
     hora: hora.value,
     motivo: motivo.value,
   }
-  // if (pacienteT !== "") {
-  //   alert("Por favor Ingrese correctamente los datos");
-  // }
-  if ((localStorage.setItem(motivo.value, JSON.stringify(pacienteT)))!== "") {
-    localStorage.removeItem(pacienteT);
-  }
-  localStorage.setItem(motivo.value, JSON.stringify(pacienteT))
+
+  localStorage.setItem(`Turno de :`, JSON.stringify(paciente1T))
   motivo.value=""
   dia.value= ""
   hora.value=""
+
+guardarTurno.push(paciente1T)
+
 })
 
 

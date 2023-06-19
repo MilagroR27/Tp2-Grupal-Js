@@ -4,6 +4,7 @@ let pacientes=[];
 const formularioPacientes = document.getElementById('registroPacientes');
 
 // Manejar el envío del formulario de médicos
+
 formularioPacientes.addEventListener('submit', function(event) {
   event.preventDefault(); // esto va a evitar que el formulario se envíe automáticamente
 
