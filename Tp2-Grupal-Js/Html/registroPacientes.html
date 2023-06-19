@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="../Css/registroPacientes.css">
     <title>Registro De Pacientes</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="container">
             <img class="img" src="000.png"alt="Logo">
             <h1>Registro para Pacientes</h1>
-            <form action="00.html" method="post" id="pacienteForm">
+            <form action="00.html" method="post" id="registroPacientes">
     
             <label class="apellidoYNombre" for="nombre">Apellido y Nombre</label>
             <input 
@@ -20,8 +20,7 @@
             name="apellidoYNombre" 
             id="nombrePaciente"
             placeholder="Ingrese su Apellido y Nombre"
-            pattern="[a-z A-Z]"
-            title="Ejemplo: PerezJuan"
+            pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ\s']+"
             required
             >
 
@@ -29,7 +28,7 @@
             <input 
             type="email" 
             name="emailPaciente" 
-            id="email" 
+            id="emailPaciente" 
             placeholder="Ingrese su correo"
             >
             
@@ -40,8 +39,7 @@
             name="Usuario" 
             id="usuarioPaciente"
             placeholder="Ingrese su nombre usuario"
-            pattern="[a-zA-Z]{4,10}"
-            title="Ejemplo: JuanPerez"
+            pattern="[a-zA-Z0-9.-]+"
             required
             >
     
@@ -62,11 +60,14 @@
             <br><br>
 
             <a 
-            href="/LogIn/index.html"
+            href="LogIn.html"
             >Volver</a>
 
             </form>
         </div>
     </main>
+
+    <script defer src="../Js/registroPacientes.js" ></script>
+    <script defer src="../Js/registroPacientes1.js"></script>
 </body>
 </html>
