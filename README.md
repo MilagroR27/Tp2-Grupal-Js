@@ -18,7 +18,7 @@ Simplemente debes clonar el repositorio utilizando el siguiente comando:
 $ git clone https://github.com/MilagroR27/Tp2-Grupal-Js.git
 
 
-## Herramientas utilizadas 🛠️
+Herramientas utilizadas 🛠️
 
 - Bootstrap v5.3
 
