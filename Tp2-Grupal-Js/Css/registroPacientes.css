@@ -101,22 +101,20 @@ input:focus {
     border-right-style: initial;
 }
 
-.container a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: #ffffff;
+.turno{
+    display: flex;
+    border: 2px black solid;
+    align-self: center;
+    justify-content: space-evenly;
+    max-width: 60%;
+    margin: auto;
 }
 
-.container a:hover {
-    transform: scale(1.1);
-    color: #44AA99;
+.cancelar {
+    background-color: #6ECCAF;
+    font-weight: 500;
 }
 
-.container input[type="submit"]:hover {
-    color: #44AA99;
-}
-
-.container input::placeholder {
-    color: #44AA99;
+.cancelar:hover {
+    border: 1px black solid;
 }

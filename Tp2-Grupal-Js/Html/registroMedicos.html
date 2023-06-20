@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="../Css/registroMedicos.css">
     <title>Registro De Medicos</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <img class="img" src="000.png"alt="Logo">
+            <img class="img" src="../Assets/logoCircular.png"alt="Logo">
             <h1>Registro para Medicos</h1>
-            <form action="00.html" method="post" id="medicoForm">
+            <form action="00.html" method="post" id="registroMedicos">
     
             <label class="apellidoYNombre" for="nombre">Apellido y Nombre</label>
             <input 
@@ -42,7 +42,7 @@
             required
             >
 
-            <label class="especialidad" for="Usuario">Especialidad</label>
+            <label class="especialidad" for="Especialidad">Especialidad</label>
             <input 
             type="text" 
             name="Especialidad" 
@@ -60,7 +60,6 @@
             id="usuarioMedico"
             placeholder="Ingrese su nombre usuario"
             pattern="[a-zA-Z0-9.-]+"
-            title="Ejemplo: JuanPerez"
             required
             >
     
@@ -76,7 +75,7 @@
 
             <label for="imagen">Imagen de perfil:</label>
             <input type="file" 
-            id="imagen" 
+            id="imagenPerfil" 
             name="imagen" 
             accept="image/*" 
             required>
@@ -86,16 +85,17 @@
             <input 
             type="submit" 
             value="Registrarme"
-            onclick="registrarMedico(event)">
+            >
 
             <a 
-            href="/LogIn/index.html"
+            href="LogIn.html"
             >Volver</a>
             
             </form>
         </div>
     </main>
 
-    <script defer src="Data.js" ></script>
+    <script defer src="../Js/registroMedicos.js" ></script>
+    <script defer src="../Js/registroMedicos1.js"></script>
 </body>
 </html>
