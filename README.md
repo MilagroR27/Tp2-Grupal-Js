@@ -36,5 +36,4 @@ Simplemente debes clonar el repositorio utilizando el siguiente comando:
 ```bash
 $ git clone https://github.com/MilagroR27/Tp2-Grupal-Js.git 
 
----------------------------------------------------------------------
 
