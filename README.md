@@ -21,11 +21,11 @@ No se necesita instalar ni configurar nada antes de utilizar el proyecto.
 
 ## Autores 👩‍💻👨‍💻
 
--Guarnaca, Nancy.
+- Guarnaca, Nancy.
 
--Rodriguez, Milagro.
+- Rodriguez, Milagro.
 
--Thoma, Nahuel.
+- Thoma, Nahuel.
 
 - Zelarayan, Pilar.
 
