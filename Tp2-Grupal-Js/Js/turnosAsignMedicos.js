@@ -1,7 +1,7 @@
 
 
 
-//Agregarpacientes confirmados a la tabla Medicos
+//Agregar pacientes confirmados a la tabla Medicos
 
 let pacientes = new Array();
   pacientes[0]= {Nombre:"Luis",
@@ -104,7 +104,7 @@ let pacientes = new Array();
 
 
  
-
+//Pacientes por confirmar
 
   let pacientesPorConfirmar =new Array();
   pacientesPorConfirmar[0]=
@@ -179,11 +179,7 @@ let pacientes = new Array();
        newButton=document.createElement('button')
        newButton.innerHTML = "Aceptar";
        cuerpoTabla1.appendChild(newButton);
-      //  newButton.setAttribute("border","5px");
-       
-      //  newButton.addEventListener("click", alert("Hola"));
-      
-
+           
        newButtonN=document.createElement('button')
        newButtonN.innerHTML = "Rechazar";
        cuerpoTabla1.appendChild(newButtonN);
@@ -198,4 +194,28 @@ let pacientes = new Array();
 //Agregar pacientes 
   //  pacientes.push({Nombre:"Juan",Apellido:"Lopez",ObraSocial:"Osde",Turno:"2023-06-28",Horario:"18:00",Medico:"Dr. Nicolás J. Rodriguez",Especialidad:"Cirujano Reconstructivo"});
   //  console.log(pacientes);
- 
+
+  //obtener datos de una fila c/ id
+  // let obtenerFila= document.getElementById("IdFila");
+  // let elementosFila = obtenerFila.getElementsByTagName("td");
+  // for (let i=0; i<=4; i++){
+  //   console.log(elementosFila[i].innerHTML);
+  // }
+
+  let tablaturnos = document.getElementById("pacconf");
+  
+  function selectFila(tabla, numeroFila){
+    let fila = tabla.rows[numeroFila].cells;
+    for (const celda of fila){
+      console.log(celda.innerHTML);
+    }
+  }
+  selectFila(tablaturnos,0); 
+
+  // function selectFilaTd(tabla, numeroFila){
+  //   let fila = tabla.rows[numeroFila].getElementsByTagName("td");
+  //   for (const celda of fila){
+  //     console.log(celda.innerHTML);
+  //   }
+  // }
+  // selectFilaTd(tablaturnos,0);
