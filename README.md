@@ -19,6 +19,13 @@ No se necesita instalar ni configurar nada antes de utilizar el proyecto.
 
 ------------------------------------------------------------------
 
+## Autores 👩‍💻👨‍💻
+
+-Guarnaca, Nancy.
+-Rodriguez, Milagro.
+-Thoma, Nahuel.
+- Zelarayan, Pilar.
+
 ## Instalación ⚙️
 
 Simplemente debes clonar el repositorio utilizando el siguiente comando:
@@ -27,9 +34,4 @@ Simplemente debes clonar el repositorio utilizando el siguiente comando:
 $ git clone https://github.com/MilagroR27/Tp2-Grupal-Js.git 
 
 ---------------------------------------------------------------------
-
-
-
-
-
 
