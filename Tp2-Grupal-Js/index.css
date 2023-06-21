@@ -1,0 +1,27 @@
+body{
+  background: #6ECCAF;
+  background: linear-gradient(to right, #F3ECB0,#6ECCAF);
+  }
+  .card-body {
+      background-color: #F3ECB0;
+  }
+#contenedor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+
+}
+#contenedor > div {
+  width: 50%;
+  
+}
+/* .border {
+  display: flex;
+  justify-content: space-around;
+ 
+} */
+.image{
+  text-decoration: none;
+}
+  
