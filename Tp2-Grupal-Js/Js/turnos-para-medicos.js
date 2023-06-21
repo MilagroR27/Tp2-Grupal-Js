@@ -15,10 +15,16 @@ const docsection= document.querySelector("#medico1");
   card.innerHTML=doc;
   docsection.appendChild(card);
 
+
 // input de turnos
+
+
 const guardarTurno= []
+
 const motivo= document.querySelector("#motivo");
+
 const dia= document.querySelector("#dia");
+
 const hora= document.querySelector("#hora");
 
 dia.addEventListener("blur", function() {
@@ -55,6 +61,7 @@ const nombre = datosRecuperados[0].nombre;
 
 let pacienteT= 
   {
+    
     dia: dia.value,
     hora: hora.value,
     motivo: motivo.value,

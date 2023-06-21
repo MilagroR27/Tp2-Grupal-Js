@@ -10,5 +10,22 @@
 .imgdoc{
   width: 200px;
   height: 200px;
+  
 }
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 390px) {
+  .imgdoc{
+    display: none;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 390px) {
+  .medicos{
+    border: 5px  #344d64 outset;
+  }
+}
+
+
 

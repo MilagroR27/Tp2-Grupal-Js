@@ -1,6 +1,7 @@
 main {
     position: relative;
-    margin-top: 25%;
+    margin-top: 18%;
+    margin-bottom: 10%;
     background-color:  #ffffff ;
     /* background-size: cover; */
     /* display: flex;
@@ -13,6 +14,7 @@ main {
     background-color: #344D67;
     color: #ffffff;
     position: relative;
+
     /* left: 50%;
     transform: translate(-50%,0%); */
     box-sizing: border-box;
