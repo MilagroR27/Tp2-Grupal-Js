@@ -1,6 +1,7 @@
 main {
     position: relative;
-    margin-top: 25%;
+    margin-top: 18%;
+    margin-bottom: 10%;
     background-color:  #ffffff ;
     /* background-size: cover; */
 }
@@ -12,8 +13,6 @@ main {
     /* color: #F3ECB0; */
     color: #ffffff;
     position: relative;
-    left: 50%;
-    transform: translate(-50%,0%);
     box-sizing: border-box;
     padding: 20% 5% 10% 5%;
     border: solid 10px   #6ECAAF ;
