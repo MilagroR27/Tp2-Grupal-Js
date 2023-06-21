@@ -78,9 +78,9 @@ let pacientes = new Array();
     td.innerText=p.Apellido;
     cuerpoTabla.appendChild(td);
     
-    td= document.createElement('td');
-    td.innerText=p.ObraSocial;
-    cuerpoTabla.appendChild(td);
+    // td= document.createElement('td');
+    // td.innerText=p.ObraSocial;
+    // cuerpoTabla.appendChild(td);
 
     td= document.createElement('td');
     td.innerText=p.Turno;
@@ -156,9 +156,9 @@ let pacientes = new Array();
        td1.innerText=p.Apellido;
        cuerpoTabla1.appendChild(td1);
        
-       td1= document.createElement('td');
-       td1.innerText=p.ObraSocial;
-       cuerpoTabla1.appendChild(td1);
+      //  td1= document.createElement('td');
+      //  td1.innerText=p.ObraSocial;
+      //  cuerpoTabla1.appendChild(td1);
    
        td1= document.createElement('td');
        td1.innerText=p.Turno;
@@ -202,15 +202,15 @@ let pacientes = new Array();
   //   console.log(elementosFila[i].innerHTML);
   // }
 
-  let tablaturnos = document.getElementById("pacconf");
+  // let tablaturnos = document.getElementById("pacconf");
   
-  function selectFila(tabla, numeroFila){
-    let fila = tabla.rows[numeroFila].cells;
-    for (const celda of fila){
-      console.log(celda.innerHTML);
-    }
-  }
-  selectFila(tablaturnos,0); 
+  // function selectFila(tabla, numeroFila){
+  //   let fila = tabla.rows[numeroFila].cells;
+  //   for (const celda of fila){
+  //     console.log(celda.innerHTML);
+  //   }
+  // }
+  // selectFila(tablaturnos,0); 
 
   // function selectFilaTd(tabla, numeroFila){
   //   let fila = tabla.rows[numeroFila].getElementsByTagName("td");
