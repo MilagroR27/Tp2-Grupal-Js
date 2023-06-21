@@ -21,7 +21,7 @@ No se necesita instalar ni configurar nada antes de utilizar el proyecto.
 
 ## Autores 👩‍💻👨‍💻
 
-- Guarnaca, Nancy.
+- Guaranca, Nancy.
 
 - Rodriguez, Milagro.
 
