@@ -13,8 +13,8 @@ main {
     background-color: #344D67;
     color: #ffffff;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 20%);
+/*     left: 50%;
+    transform: translate(-50%, 20%); */
     box-sizing: border-box;
     padding: 20% 5% 10% 5%;
     border: solid 10px   #6ECAAF ;
